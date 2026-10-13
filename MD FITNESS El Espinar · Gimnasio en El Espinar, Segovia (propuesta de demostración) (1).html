@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MD FITNESS El Espinar · Gimnasio en El Espinar, Segovia (propuesta de demostración)</title>
+<meta name="description" content="Propuesta de demostración de página web para MD FITNESS El Espinar, gimnasio en El Espinar (Segovia). No es la web oficial.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HealthClub","name":"MD FITNESS El Espinar","address":{"@type":"PostalAddress","addressLocality":"El Espinar","addressRegion":"Segovia","addressCountry":"ES"}}
+</script>
+<style>
+:root{--bg:#0e0f11;--bg2:#17191d;--tx:#f4f4f2;--mut:#a3a7ad;--ac:#e3262a;--ln:#2a2d33;--r:14px;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#f6f5f2;--bg2:#fff;--tx:#14161a;--mut:#5c616a;--ln:#dcdad4}}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 96px)}
+*{box-sizing:border-box}
+body{-webkit-text-size-adjust:100%;margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 Barlow,system-ui,sans-serif}
+h1,h2,h3{overflow-wrap:break-word;text-wrap:balance}
+h1,h2,h3{font-family:"Barlow Condensed",Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em;line-height:1.05;margin:0}
+a{color:inherit}
+.demo{background:var(--ac);color:#fff;text-align:center;font-size:13px;font-weight:500;padding:8px 14px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--ln)}
+.nav{max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 18px}
+.logo{font:800 22px "Barlow Condensed",sans-serif;text-decoration:none;letter-spacing:.04em}
+.logo b{color:var(--ac)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+nav a{white-space:nowrap;text-decoration:none;font-size:15px;color:var(--mut)}
+nav a:hover{color:var(--tx)}
+#tg{display:none;background:none;border:1px solid var(--ln);color:var(--tx);border-radius:10px;padding:8px 12px;font:inherit}
+@media(max-width:1020px){#tg{display:block}nav ul{display:none;position:absolute;left:0;right:0;top:100%;background:var(--bg);flex-direction:column;gap:0;border-bottom:1px solid var(--ln)}nav ul.open,.mt:checked~nav ul{display:flex}nav li a{display:block;padding:14px 18px}}
+.btn{display:inline-block;margin:0 6px 10px 0;background:var(--ac);color:#fff;font-weight:500;text-decoration:none;padding:14px 26px;border-radius:999px;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.o{background:none;color:var(--tx);border:1px solid var(--ln)}
+.hero{min-height:82vh;display:flex;align-items:center;padding:60px 0;background:radial-gradient(900px 500px at 80% 10%,rgba(227,38,42,.32),transparent 60%),linear-gradient(160deg,#1a1c20,#0b0c0e)}
+.hero>div{max-width:1100px;margin:auto;width:100%;padding:0 18px;color:#f4f4f2}
+.hero h1{font-size:clamp(46px,10vw,112px);font-weight:800}
+.hero h1 span{color:var(--ac)}
+.hero p{max-width:520px;color:#c4c7cc;font-size:18px;margin:18px 0 28px}
+.hero .btn.o{color:#f4f4f2;border-color:#555}
+section{max-width:1100px;margin:auto;padding:clamp(48px,8vw,96px) 18px}
+h2{overflow-wrap:break-word}p{text-wrap:pretty}
+h2{font-size:clamp(34px,6vw,56px);font-weight:800;margin-bottom:10px}
+h2+p{color:var(--mut);max-width:620px;margin:0 0 32px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--bg2);border:1px solid var(--ln);border-radius:var(--r);padding:22px}
+.card h3{font-size:26px;margin-bottom:8px}
+.card p{margin:0;color:var(--mut)}
+.ph{aspect-ratio:4/3;border-radius:var(--r);border:1px dashed var(--ln);display:flex;align-items:flex-end;padding:14px;color:var(--mut);font-size:13px;background:repeating-linear-gradient(135deg,var(--bg2),var(--bg2) 14px,var(--bg) 14px,var(--bg) 28px)}
+.tag{display:inline-block;font-size:12px;border:1px solid var(--ac);color:var(--ac);border-radius:999px;padding:2px 10px;margin-bottom:12px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+.cta{background:var(--ac);color:#fff;border-radius:var(--r);padding:36px 24px;text-align:center}
+.cta .btn{background:#111;color:#fff}
+.card ul{list-style:none;margin:0;padding:0;color:var(--mut)}.card li{overflow-wrap:anywhere;display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--ln);padding:7px 0}.card li b{color:var(--tx);white-space:nowrap}.card h4{margin:16px 0 4px;font:600 15px 'Barlow Condensed',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--ac)}.card h4:first-of-type{margin-top:0}footer{border-top:1px solid var(--ln);padding:28px 18px;text-align:center;color:var(--mut);font-size:13px}
+.btn{border:1px solid transparent}
+.hero,.hero>div{text-align:center}
+.eyebrow{font:600 15px "Barlow Condensed",sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#c4c7cc;margin-bottom:18px}
+.hero p{margin:22px auto 32px}
+.hero .r{color:var(--ac)}
+.row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.row .btn{margin:0;min-width:210px;text-align:center}
+@media(max-width:480px){.row{flex-direction:column;align-items:center}.row .btn{width:100%;max-width:320px}}
+#horario .card h3{color:var(--ac);margin-bottom:12px}
+#horario .card li{padding:10px 0;font-variant-numeric:tabular-nums}
+.hyb{margin-top:24px;position:relative;overflow:hidden;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;border-radius:var(--r);border:1px solid #3a1416;background:linear-gradient(135deg,#240d0f,#0b0c0e 70%);color:#f4f4f2;padding:clamp(24px,4vw,40px) clamp(24px,4vw,40px) clamp(24px,4vw,40px) clamp(84px,11vw,112px)}
+.hyb:before{content:"";position:absolute;left:0;top:0;bottom:0;width:clamp(44px,6vw,64px);background:repeating-linear-gradient(115deg,transparent 0 10px,rgba(227,38,42,.75) 10px 18px)}
+.hyb .k{font:600 14px "Barlow Condensed",sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--ac)}
+.hyb h3{font-size:clamp(30px,5vw,48px);margin:6px 0 8px}
+.hyb p{margin:0;color:#c4c7cc}
+.chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;margin:0;padding:0}
+.chips li{font:800 26px "Barlow Condensed",sans-serif;letter-spacing:.04em;border:1px solid var(--ac);border-radius:999px;padding:8px 20px}
+.sc{display:flex;flex-direction:column;gap:18px;text-decoration:none;transition:transform .25s,border-color .25s,box-shadow .25s}
+.sc svg{width:40px;height:40px;color:var(--ac)}
+.sc span{color:var(--mut)}
+.sc .go{margin-top:auto;color:var(--tx);font-weight:500}
+.soc{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+@media(hover:hover){.sc:hover{transform:translateY(-4px);border-color:var(--ac);box-shadow:0 14px 30px -14px rgba(227,38,42,.55)}}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#0e0f11;--bg2:#17191d;--tx:#f4f4f2;--mut:#a3a7ad;--ln:#2a2d33}}
+body{background:#0b0c0e linear-gradient(160deg,#240d0f 0%,#0b0c0e 22%,#0b0c0e 62%,#1a0a0c 100%)}
+body:before{content:"";position:fixed;z-index:-1;left:0;top:0;bottom:0;width:clamp(8px,1.6vw,26px);pointer-events:none;opacity:.7;background:repeating-linear-gradient(115deg,transparent 0 10px,rgba(227,38,42,.75) 10px 18px)}
+.mt{position:absolute;opacity:0;width:1px;height:1px;margin:0;pointer-events:none}
+.mt:focus-visible+#tg{outline:2px solid var(--ac);outline-offset:2px}
+#tg{-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;margin-left:auto;align-items:center;justify-content:center;min-height:44px;min-width:76px;cursor:pointer}
+@media(max-width:1020px){#tg{display:flex}nav ul{max-height:calc(100vh - 140px);overflow-y:auto}}
+.chips li{text-align:center;line-height:1.1}.chips small{display:block;margin-top:4px;font:500 12px Barlow,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#c4c7cc}
+</style>
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</head>
+<body>
+<div class="demo">Propuesta de demostración · No es la web oficial de MD FITNESS El Espinar ni está autorizada por el gimnasio</div>
+<header><div class="nav">
+<a class="logo" href="#inicio">MD<b>FITNESS</b></a>
+<input type="checkbox" id="mt" class="mt" aria-label="Abrir o cerrar el menú"><label id="tg" for="mt">Menú</label>
+<nav><ul id="mn"><li><a href="#gimnasio">El gimnasio</a></li><li><a href="#servicios">Servicios</a></li><li><a href="#horario">Horario</a></li><li><a href="#tarifas">Tarifas</a></li><li><a href="#instalaciones">Instalaciones</a></li><li><a href="#galeria">Galería</a></li><li><a href="#redes">Redes sociales</a></li><li><a href="#contacto">Contacto</a></li></ul></nav></div></header>
+
+<main>
+<div class="hero" id="inicio"><div>
+<div class="eyebrow">MD FITNESS · El Espinar, Segovia</div>
+<h1>Tu gimnasio<br>en <span>El Espinar</span></h1>
+<p>Gimnasio, clases colectivas y entrenamiento personal. Abierto los <span class="r">365</span> días del año.</p>
+<div class="row"><a class="btn" href="#contacto">Pide información</a><a class="btn o" href="#horario">Ver horarios</a></div>
+</div></div>
+
+<section id="gimnasio" class="reveal">
+<h2>El gimnasio</h2>
+<p>En MD FITNESS El Espinar encontrarás instalaciones premium, entrenadores cualificados y una comunidad con la que dar lo mejor de ti. Únete a la familia MD.</p>
+<div class="grid"><div class="card"><h3>Entrenadores cualificados</h3><p>Acompañamiento profesional para sacar tu mejor versión.</p></div><div class="card"><h3>365 días al año</h3><p>Abierto todos los días, hasta las 00:00 de la noche.</p></div><div class="card"><span class="tag">Por confirmar</span><h3>El Rincón de los Sueños</h3><p>En alianza con este espacio, entrena mientras tus hijos disfrutan de actividades pensadas para ellos.</p></div></div>
+</section>
+
+<section id="servicios" class="reveal">
+<h2>Servicios y entrenamiento</h2>
+<p>Gimnasio, clases colectivas y entrenamiento personal, en grupo o en pareja.</p>
+<div class="grid">
+<div class="card"><h3>Clases colectivas</h3><p>Pilates, taichi, boxeo, boxeo Saolín, step y entrenamiento híbrido.</p></div>
+<div class="card"><h3>Sala de gimnasio</h3><p>Acceso mensual, pase diario, semanal o bono de sesiones.</p></div>
+<div class="card"><h3>Entrenamiento personal</h3><p>Individual, en pareja o en grupos reducidos.</p></div>
+</div>
+</section>
+
+<section id="horario" class="reveal"><h2>Horario de clases</h2><p>Horarios provisionales de las clases colectivas. Viernes: por confirmar.</p><div class="grid"><div class="card"><h3>Lunes</h3><ul><li>10:00<b>Pilates</b></li><li>18:00<b>Taichi</b></li><li>19:00<b>Boxeo Saolín</b></li><li>20:00<b>Step</b></li></ul></div><div class="card"><h3>Martes</h3><ul><li>10:00<b>Boxeo</b></li><li>19:00<b>Pilates</b></li><li>20:00<b>Boxeo</b></li><li>21:00<b>Boxeo</b></li></ul></div><div class="card"><h3>Miércoles</h3><ul><li>10:00<b>Pilates</b></li><li>18:00<b>Taichi</b></li><li>19:00<b>Boxeo Saolín</b></li><li>20:00<b>Step</b></li></ul></div><div class="card"><h3>Jueves</h3><ul><li>10:00<b>Boxeo</b></li><li>19:00<b>Pilates</b></li><li>20:00<b>Boxeo</b></li><li>21:00<b>Boxeo</b></li></ul></div></div><div class="hyb"><div><span class="k">Sala 2 · De lunes a jueves</span><h3>Entrenamiento híbrido</h3><p>Elige tu hora y empieza.</p></div><ul class="chips"><li>10:00<small>Mar y jue</small></li><li>18:00<small>Lun a jue</small></li><li>19:00<small>Lun a jue</small></li></ul></div></section>
+
+<section id="tarifas" class="reveal">
+<h2>Tarifas y horarios</h2>
+<p>Promo familiar (3 o más personas) y promo jubilados: 15 % de descuento.</p>
+<div class="grid">
+<div class="card"><h4>Cuota mensual</h4><ul><li>Con permanencia<b>39,90 €</b></li><li>Sin permanencia<b>44,90 €</b></li><li>Clases 1 h/semana<b>34,90 €</b></li><li>Clases 2 h/semana<b>44,90 €</b></li><li>Clases 2 h + gym<b>64,90 €</b></li></ul><h4>Pases</h4><ul><li>Diario<b>7,00 €</b></li><li>Semanal<b>15,00 €</b></li><li>Bono 10 sesiones<b>50,00 €</b></li></ul></div>
+<div class="card"><h4>Entrenamiento personal (por sesión)</h4><ul><li>1 h/semana<b>35,00 €</b></li><li>2 h/semana<b>30,00 €</b></li><li>Pareja 1 h/sem.<b>65,00 €</b></li><li>Pareja 2 h/sem.<b>55,00 €</b></li></ul><h4>Grupos reducidos</h4><ul><li>2 h/semana, al mes<b>70,00 €</b></li></ul><p style="margin-top:14px">Abierto 365 días, hasta las 00:00. Hora de apertura: por confirmar.</p></div>
+</div>
+</section>
+
+<section id="instalaciones" class="reveal">
+<h2>Instalaciones</h2>
+<p>Aquí irán las fotografías reales de las salas y la maquinaria.</p>
+<div class="grid">
+<div class="ph">Foto provisional · Sala principal</div>
+<div class="ph">Foto provisional · Zona de peso libre</div>
+<div class="ph">Foto provisional · Zona cardio</div>
+</div>
+</section>
+
+<section id="galeria" class="reveal">
+<h2>Galería</h2>
+<div class="grid">
+<div class="ph">Foto provisional</div><div class="ph">Foto provisional</div><div class="ph">Foto provisional</div><div class="ph">Foto provisional</div>
+</div>
+</section>
+
+<section id="redes" class="reveal"><h2>Síguenos</h2><p>Encuentra a MD FITNESS El Espinar en redes sociales.</p><div class="grid soc"><a class="card sc" href="https://www.instagram.com/mdfitnesselespinar/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r=".9" fill="currentColor" stroke="none"/></svg><div><h3>Instagram</h3><span>@mdfitnesselespinar</span></div><span class="go">Visitar perfil →</span></a><a class="card sc" href="https://www.tiktok.com/@md.fitness.el.esp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg><div><h3>TikTok</h3><span>@md.fitness.el.esp</span></div><span class="go">Visitar perfil →</span></a></div></section>
+
+<section id="contacto" class="reveal">
+<div class="cta">
+<h2>¿Quieres conocernos?</h2>
+<p style="color:#fff;margin:10px auto 22px">El Espinar, Segovia · Teléfono y dirección: [por confirmar].</p>
+<a class="btn" href="https://www.instagram.com/mdfitnesselespinar/" target="_blank" rel="noopener">Escríbenos por Instagram</a>
+</div>
+</section>
+</main>
+
+<footer>Propuesta de demostración preparada sin encargo ni autorización del gimnasio. Tarifas y horarios pendientes de confirmar. Fotos provisionales.</footer>
+
+<script>
+const mt=document.getElementById('mt'),mn=document.getElementById('mn');
+const setMenu=o=>{mt.checked=o};
+mn.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+document.addEventListener('click',e=>{if(!e.target.closest('header'))setMenu(false)});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&mt.checked){setMenu(false);document.getElementById('tg').focus()}});
+window.matchMedia('(min-width:1021px)').addEventListener('change',e=>{if(e.matches)setMenu(false)});
+if(!('IntersectionObserver' in window)){document.querySelectorAll('.reveal').forEach(el=>el.classList.add('in'))}else{const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el))}
+</script>
+</body>
+</html>
